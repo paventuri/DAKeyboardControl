@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "DAKeyboardControl.h"
 
+#import <TAPKeyboardPop/UIViewController+TAPKeyboardPop.h>
+
 @interface ViewController ()
 
 @end
@@ -25,12 +27,15 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0f,
                                                                            0.0f,
                                                                            self.view.bounds.size.width,
-                                                                           self.view.bounds.size.height - 40.0f)];
+                                                                           self.view.bounds.size.height - self.tabBarController.tabBar.frame.size.height - 40.0f)];
     tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:tableView];
     
     UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f,
-                                                                     self.view.bounds.size.height - 40.0f,
+                                                                     self.view.bounds.size.height - self.tabBarController.tabBar.frame.size.height - 40.0f,
                                                                      self.view.bounds.size.width,
                                                                      40.0f)];
     toolBar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
@@ -56,6 +61,8 @@
     
     self.view.keyboardTriggerOffset = toolBar.bounds.size.height;
     
+    __weak ViewController *weakView = self;
+    
     [self.view addKeyboardPanningWithFrameBasedActionHandler:^(CGRect keyboardFrameInView, BOOL opening, BOOL closing) {
         /*
          Try not to call "self" inside this block (retain cycle).
@@ -65,7 +72,8 @@
          */
         
         CGRect toolBarFrame = toolBar.frame;
-        toolBarFrame.origin.y = keyboardFrameInView.origin.y - toolBarFrame.size.height;
+        toolBarFrame.origin.y = MIN(keyboardFrameInView.origin.y,weakView.tabBarController.tabBar.frame.origin.y) - toolBarFrame.size.height;
+        
         toolBar.frame = toolBarFrame;
         
         CGRect tableViewFrame = tableView.frame;
@@ -74,12 +82,33 @@
     } constraintBasedActionHandler:nil];
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    [self.view removeKeyboardControl];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     else
         return YES;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 50;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+    
+    return cell;
 }
 
 @end

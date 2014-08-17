@@ -1,0 +1,10 @@
+PODS:
+  - TAPKeyboardPop (0.1.2)
+
+DEPENDENCIES:
+  - TAPKeyboardPop (~> 0.1.2)
+
+SPEC CHECKSUMS:
+  TAPKeyboardPop: 1d57b5b8e7521454164c5e9e9e4e9cf19a375f37
+
+COCOAPODS: 0.33.1

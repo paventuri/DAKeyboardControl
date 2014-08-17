@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0F116719A16304008D401E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F116619A16304008D401E /* FirstViewController.m */; };
 		6366DFC815B3E76100FE53DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6366DFC715B3E76100FE53DE /* UIKit.framework */; };
 		6366DFCA15B3E76100FE53DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6366DFC915B3E76100FE53DE /* Foundation.framework */; };
 		6366DFCC15B3E76100FE53DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6366DFCB15B3E76100FE53DE /* CoreGraphics.framework */; };
@@ -16,9 +17,13 @@
 		6366DFDB15B3E76100FE53DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6366DFDA15B3E76100FE53DE /* ViewController.m */; };
 		63DD74B915B424B700E33D01 /* DAKeyboardControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DD74B815B424B700E33D01 /* DAKeyboardControl.m */; };
 		63ECD0631628CC5A004D8D10 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63ECD0621628CC5A004D8D10 /* Default-568h@2x.png */; };
+		AD17E53EC4154619BE91B0F6 /* libPods-DAKeyboardControlExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B33F10E76606426189256DF8 /* libPods-DAKeyboardControlExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2495BBDB942947148A466496 /* Pods-DAKeyboardControlExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAKeyboardControlExample.xcconfig"; path = "Pods/Pods-DAKeyboardControlExample.xcconfig"; sourceTree = "<group>"; };
+		3A0F116519A16304008D401E /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		3A0F116619A16304008D401E /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		6366DFC315B3E76100FE53DE /* DAKeyboardControlExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAKeyboardControlExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6366DFC715B3E76100FE53DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6366DFC915B3E76100FE53DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,6 +39,7 @@
 		63DD74B715B424B700E33D01 /* DAKeyboardControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAKeyboardControl.h; sourceTree = "<group>"; };
 		63DD74B815B424B700E33D01 /* DAKeyboardControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAKeyboardControl.m; sourceTree = "<group>"; };
 		63ECD0621628CC5A004D8D10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		B33F10E76606426189256DF8 /* libPods-DAKeyboardControlExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DAKeyboardControlExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 				6366DFC815B3E76100FE53DE /* UIKit.framework in Frameworks */,
 				6366DFCA15B3E76100FE53DE /* Foundation.framework in Frameworks */,
 				6366DFCC15B3E76100FE53DE /* CoreGraphics.framework in Frameworks */,
+				AD17E53EC4154619BE91B0F6 /* libPods-DAKeyboardControlExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +64,7 @@
 				6366DFCD15B3E76100FE53DE /* DAKeyboardControlExample */,
 				6366DFC615B3E76100FE53DE /* Frameworks */,
 				6366DFC415B3E76100FE53DE /* Products */,
+				2495BBDB942947148A466496 /* Pods-DAKeyboardControlExample.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +82,7 @@
 				6366DFC715B3E76100FE53DE /* UIKit.framework */,
 				6366DFC915B3E76100FE53DE /* Foundation.framework */,
 				6366DFCB15B3E76100FE53DE /* CoreGraphics.framework */,
+				B33F10E76606426189256DF8 /* libPods-DAKeyboardControlExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +92,8 @@
 			children = (
 				6366DFD615B3E76100FE53DE /* AppDelegate.h */,
 				6366DFD715B3E76100FE53DE /* AppDelegate.m */,
+				3A0F116519A16304008D401E /* FirstViewController.h */,
+				3A0F116619A16304008D401E /* FirstViewController.m */,
 				6366DFD915B3E76100FE53DE /* ViewController.h */,
 				6366DFDA15B3E76100FE53DE /* ViewController.m */,
 				6366DFCE15B3E76100FE53DE /* Supporting Files */,
@@ -119,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6366DFE415B3E76100FE53DE /* Build configuration list for PBXNativeTarget "DAKeyboardControlExample" */;
 			buildPhases = (
+				62B31B3D45034DF0B1DC535D /* Check Pods Manifest.lock */,
 				6366DFBF15B3E76100FE53DE /* Sources */,
 				6366DFC015B3E76100FE53DE /* Frameworks */,
 				6366DFC115B3E76100FE53DE /* Resources */,
+				493667C93D2A46778444FC29 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,7 +151,7 @@
 		6366DFBA15B3E76000FE53DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Shout Messenger";
 			};
 			buildConfigurationList = 6366DFBD15B3E76000FE53DE /* Build configuration list for PBXProject "DAKeyboardControlExample" */;
@@ -170,6 +183,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		493667C93D2A46778444FC29 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-DAKeyboardControlExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62B31B3D45034DF0B1DC535D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6366DFBF15B3E76100FE53DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -177,6 +223,7 @@
 			files = (
 				6366DFD415B3E76100FE53DE /* main.m in Sources */,
 				6366DFD815B3E76100FE53DE /* AppDelegate.m in Sources */,
+				3A0F116719A16304008D401E /* FirstViewController.m in Sources */,
 				6366DFDB15B3E76100FE53DE /* ViewController.m in Sources */,
 				63DD74B915B424B700E33D01 /* DAKeyboardControl.m in Sources */,
 			);
@@ -200,9 +247,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -217,10 +265,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -230,9 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -240,10 +293,13 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -253,11 +309,12 @@
 		};
 		6366DFE515B3E76100FE53DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2495BBDB942947148A466496 /* Pods-DAKeyboardControlExample.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DAKeyboardControlExample/DAKeyboardControlExample-Prefix.pch";
 				INFOPLIST_FILE = "DAKeyboardControlExample/DAKeyboardControlExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -265,11 +322,12 @@
 		};
 		6366DFE615B3E76100FE53DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2495BBDB942947148A466496 /* Pods-DAKeyboardControlExample.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DAKeyboardControlExample/DAKeyboardControlExample-Prefix.pch";
 				INFOPLIST_FILE = "DAKeyboardControlExample/DAKeyboardControlExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
